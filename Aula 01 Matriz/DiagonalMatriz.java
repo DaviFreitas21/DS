@@ -11,18 +11,21 @@ public class DiagonalMatriz {
 		
 		for (int i=0; i<4; i++) {
 			for (int j=0; j<4; j++) {
-				if (i==j) {
-					somaDiagonal += matriz [i][j];
-				}
-			}
-		}
-		
-		for (int i=0; i<4; i++) {
-			for (int j=0; j<4; j++) {
 				System.out.print(matriz [i] [j]+" ");
 			}
 			System.out.println();
 		}
-		System.out.println("A soma dos elementos da diagonal é: "+somaDiagonal);
+		System.out.println();
+		
+		System.out.println("Esses são os elementos da diagonal:");		
+		for (int i=0; i<4; i++) {
+			for (int j=0; j<4; j++) {
+				if (i==j) {
+					System.out.print(matriz [i] [j]+" ");
+				}
+			}
+		}
+		
+
 	}
 }
