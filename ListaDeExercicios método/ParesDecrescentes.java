@@ -1,4 +1,4 @@
-package listaMetodos;
+package prjMetodos;
 
 public class ParesDecrescentes {
     public static void main(String[] args) {
