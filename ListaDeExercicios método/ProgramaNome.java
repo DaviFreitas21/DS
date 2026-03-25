@@ -1,4 +1,4 @@
-package prjAtributos;
+package prjMetodos;
 
 import java.util.Scanner;
 
