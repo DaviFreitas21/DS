@@ -1,5 +1,6 @@
 package prjMetodos2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class VerificacaoSorteio {
@@ -22,19 +23,18 @@ public class VerificacaoSorteio {
 	}
 	
 	public static boolean testeNumeros(int[] valores, int[] valoresAleatorios) {
-		boolean teste;
-		if (valores == valoresAleatorios) {
-			teste=true;
-		}
-		else {
-			teste=false;
-		}
-		return teste;
+		return Arrays.equals(valores, valoresAleatorios);
 	}
 	
 	public static void main (String[] args) {
-		leituraNumeros();
+		int[]  lidos = leituraNumeros();
 		int[] sorteados = sorteioNumero();
 		System.out.println("Numeros sorteados:"+sorteados[0]+" e "+sorteados[1]);
+		if(testeNumeros(lidos, sorteados)) {
+			System.out.println("Os valores são iguais");
+		}
+		else {
+			System.out.println("Os valores não são iguais");
+		}
 	}
 }
